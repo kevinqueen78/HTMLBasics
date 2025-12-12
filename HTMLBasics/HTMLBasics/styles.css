@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+      display: flex;
+      align-items: center;
+}
+
+
+
+
+    .menu .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+    .menu .navigation li {
+    margin-left: 20px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.header a:hover {
+    color: antiquewhite;
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+    max-height: fit-content;
+    position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;;
+       
+}
+
+
+
+
+.menu .navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+   
+    
+}
+
+.menu .navigation li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+    font-size: 1.5em;
+    
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("https://www.re-thinkingthefuture.com/wp-content/uploads/2019/07/A295-30-Works-of-Zaha-Hadid-Front-view-of-the-centre-London-Aquatics-Centre-for-the-2012-Summer-Olympics.jpg");
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    
+}
+.banner2 {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/HISTORY-.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+
+.title {
+    color: lightskyblue;
+    padding: 10px;
+    width: 100%;
+    margin-top: 75px;
+    
+}
+
+.banner .content {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    max-width: 75%;
+    
+}
+
+.banner .content .title h4{
+    padding: 10px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.banner .content p {
+    color: lightseagreen;
+    padding: 10px;
+    margin-top: 30px;
+    
+    
+    
+}
+
+.btn {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+    flex: 1 1 48%; 
+    min-width: 300px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+    flex: 1 1 48%; /* grows, shrinks, starts at 48% */
+    min-width: 300px;
+}
+
+.img {
+    max-width: 100%;
+    width: 100%;
+    border: 10px solid lightskyblue;
+    height: auto;
+    
+}
+
+.article {
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 5px solid lightskyblue;
+
+   
+}
+
+.article h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: lightskyblue;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background-color: black;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .menu .navigation {
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        align-items: center;
+    }
+    
+    .menu.active .navigation {
+        display: flex;
+    }
+
+    .menu .navigation li {
+        margin: 10px 0;
+    }
+}
+
+    
+
+    table {
+        width: 100%;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        border-collapse: collapse;
+        background-color: lightskyblue;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid black;
+        text-align: left;
+    }
+
+    thead {
+        background: lightgrey;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+        
+    }
+    
+    tbody tr:nth-child(even) {
+        background: blue;
+    }
+
+    tbody tr:hover {
+        background: lightseagreen;
+    }
+
+
+
+.dates {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://i0.pickpik.com/photos/18/598/367/live-music-rock-show-concert-preview.jpg);
+}
+
+.contactus {
+    background: url(https://i.pinimg.com/1200x/01/87/8b/01878b17c28427967e5fdd192c4ad909.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 80px;
+    min-height: 10vh;
+    border: 20px solid lightseagreen;
+
+
+}
+
+.contactform {
+    padding: 60px 50px;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactform h3 {
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.contactform .inputbox {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.contactform .inputbox input, .contactform .inputbox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputbox .btn {
+    color: white;
+    width: 30%;
+    padding: 10px 20px;
+}
+
+.contactform .inputbox .btn:hover {
+    background-color: #79092f;
+}
+
+
+ 
